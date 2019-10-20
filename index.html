@@ -3,41 +3,52 @@
 <head>
 	<script src="patient.js"></script>
 <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 <title>PainDetector</title>
-<style>
-        .picture{
-            height: 550px;
-            width:100%;
-            position: absolute;
-            left:350px;
-        }
-        .btn_head{
-            border-style: none; 
-            border-color: inherit; 
-            border-width: medium; 
-            background-color: transparent; 
-            position: absolute; 
-            width: 35px;
-            height: 50px; 
-            left: 150px; 
-            top: 50px;
-        }
-        .btn_head:hover{
-            background-color:darkcyan;
-        }
-    </style>
+
 </head>
 
 <body>
 <div class="picture">
-        <img src="body.png"  />
-    <p>
-        <button class="painArea btn_head" id="btn_head"></button>
-        <button id="btn_chest_r" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left:127px; top:125px; width: 30px;"></button>
-        <button id="btn_chest_m" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left: 157px; top: 125px; width: 30px;"></button>
-        <button id="btn_chest_l" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left: 187px; top: 125px; width: 30px;"></button>
-        <button id="btn_abd_RVQ" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left: 157px; top: 125px; width: 30px;">M</button>
-    </p>
+        <img src="body1.png"  />
+    
+        <button class="painArea btn_head" id="btn_head" onclick="selectPainLevel('btn_head')"></button>
+        <button class="painArea btn_chest_r" id="btn_chest_r" onclick="selectPainLevel('btn_chest_r')"></button>
+        <button class="painArea btn_chest_m" id="btn_chest_m" onclick="selectPainLevel('btn_chest_m')"></button>
+        <button class="painArea btn_chest_l" id="btn_chest_l" onclick="selectPainLevel('btn_chest_l')"></button>
+        <button class="painArea btn_abd_RVQ" id="btn_abd_RVQ" onclick="selectPainLevel('btn_abd_RVQ')"></button>
+        <button class="painArea btn_abd_LVQ" id="btn_abd_LVQ" onclick="selectPainLevel('btn_abd_LVQ')"></button>
+        <button class="painArea btn_abd_RLQ" id="btn_abd_RLQ" onclick="selectPainLevel('btn_abd_RLQ')"></button>
+        <button class="painArea btn_abd_LLQ" id="btn_abd_LLQ" onclick="selectPainLevel('btn_abd_LLQ')"></button>
+        <button class="painArea btn_hip" id="btn_hip" onclick="selectPainLevel('btn_hip')"></button>
+        <button class="painArea btn_thigh_l" id="btn_thigh_l" onclick="selectPainLevel('btn_thigh_l')"></button>
+        <button class="painArea btn_thigh_r" id="btn_thigh_r" onclick="selectPainLevel('btn_thigh_r')"></button>
+        <button class="painArea btn_shin_l" id="btn_shin_l" onclick="selectPainLevel('btn_shin_l')"></button>
+        <button class="painArea btn_shin_r" id="btn_shin_r" onclick="selectPainLevel('btn_shin_r')"></button>
+        <button class="painArea btn_sole_l" id="btn_sole_l" onclick="selectPainLevel('btn_sole_l')"></button>
+        <button class="painArea btn_sole_r" id="btn_sole_r" onclick="selectPainLevel('btn_sole_r')"></button>
+        <div class ="rotate_l">
+            <button class="painArea btn_arm_l" id="btn_arm_l" onclick="selectPainLevel('btn_arm_l')"></button>
+            <button class="painArea btn_back_arm_l" id="btn_back_arm_l" onclick="selectPainLevel('btn_back_arm_l')"></button>
+        </div>
+
+        <div class ="rotate_r">
+            <button class="painArea btn_arm_r" id="btn_arm_r" onclick="selectPainLevel('btn_arm_r')"></button>
+            <button class="painArea btn_back_arm_r" id="btn_back_arm_r" onclick="selectPainLevel('btn_back_arm_r')"></button>
+        </div>
+
+        <button class="painArea back_r" id="back_r" onclick="selectPainLevel('back_r')"></button>
+        <button class="painArea back_l" id="back_l" onclick="selectPainLevel('back_l')"></button>
+        <button class="painArea back_m" id="back_m" onclick="selectPainLevel('back_m')"></button>
+        
+        <button class="painArea back_leg_left" id="back_leg_left" onclick="selectPainLevel('back_leg_left')"></button>
+        <button class="painArea back_leg_right" id="back_leg_right" onclick="selectPainLevel('back_leg_right')"></button>
+        <button class="painArea back_leg_right_d" id="back_leg_right_d" onclick="selectPainLevel('back_leg_right_d')"></button>
+        <button class="painArea back_leg_left_d" id="back_leg_left_d" onclick="selectPainLevel('back_leg_left_d')"></button>
+        
+        <button class="painArea left_heel" id="left_heel" onclick="selectPainLevel('left_heel')"></button>
+        <button class="painArea right_heel" id="right_heel" onclick="selectPainLevel('right_heel')"></button>
+    
 </div>
 </body>
 </html>
