@@ -1,0 +1,354 @@
+﻿.picture {
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    left: 350px;
+}
+
+.painArea:hover {
+    background-color: aliceblue;
+}
+
+.btn_head {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    left: 150px;
+    top: 50px;
+}
+
+.btn_chest_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 70px;
+    left: 127px;
+    top: 125px;
+    width: 30px;
+}
+
+.btn_chest_m {
+    border-style: none; 
+    border-color: inherit; 
+    border-width: medium; 
+    background-color: transparent; 
+    position: absolute; 
+    height: 70px; 
+    left: 157px; 
+    top: 125px; 
+    width: 30px;
+}
+
+.btn_chest_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 70px;
+    left: 187px;
+    top: 125px;
+    width: 30px;
+}
+
+.btn_abd_RVQ {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 37px;
+    left: 133px;
+    top: 195px;
+    width: 35px;
+}
+
+.btn_abd_LVQ {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 37px;
+    left: 168px;
+    top: 195px;
+    width: 35px;
+}
+
+.btn_abd_RLQ {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 37px;
+    left: 133px;
+    top: 232px;
+    width: 35px;
+}
+
+.btn_abd_LLQ {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 37px;
+    left: 168px;
+    top: 232px;
+    width: 35px;
+}
+
+.btn_hip {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 34px;
+    left: 130px;
+    top: 269px;
+    width: 80px;
+}
+
+.btn_thigh_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 70px;
+    left: 130px;
+    top: 303px;
+    width: 38px;
+}
+
+.btn_thigh_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 75px;
+    left: 168px;
+    top: 303px;
+    width: 38px;
+}
+
+.btn_shin_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 95px;
+    left: 137px;
+    top: 378px;
+    width: 28px;
+}
+
+.btn_shin_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 100px;
+    left: 174px;
+    top: 378px;
+    width: 28px;
+}
+
+.btn_sole_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 40px;
+    left: 174px;
+    top: 478px;
+    width: 28px;
+}
+
+.btn_sole_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 40px;
+    left: 140px;
+    top: 478px;
+    width: 28px;
+}
+
+.rotate_l {
+    transform: rotate(11deg);
+}
+
+.rotate_r {
+    transform: rotate(-11deg);
+}
+
+.btn_arm_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 78px;
+    left: 30px;
+    top: -320px;
+    width: 28px;
+}
+
+.btn_back_arm_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 78px;
+    left: 305px;
+    top: -370px;
+    width: 28px;
+}
+
+.btn_arm_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 78px;
+    left: 300px;
+    top: -530px;
+    width: 28px;
+}
+
+.btn_back_arm_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 78px;
+    left: 570px;
+    top: -480px;
+    width: 28px;
+}
+
+.back_r {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 140px;
+    left: 410px;
+    top: 125px;
+    width: 30px;
+}
+
+.back_m {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 140px;
+    left: 435px;
+    top: 125px;
+    width: 30px;
+}
+
+.back_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 140px;
+    left: 455px;
+    top: 125px;
+    width: 30px;
+}
+
+.back_leg_left {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 70px;
+    left: 450px;
+    top: 300px;
+    width: 30px;
+}
+
+.back_leg_right {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 70px;
+    left: 415px;
+    top: 300px;
+    width: 30px;
+}
+
+.back_leg_right_d {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 80px;
+    left: 415px;
+    top: 390px;
+    width: 30px;
+}
+
+.back_leg_left_d {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 80px;
+    left: 450px;
+    top: 390px;
+    width: 30px;
+}
+
+.left_heel {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 20px;
+    left: 450px;
+    top: 488px;
+    width: 10px;
+}
+
+.right_heel {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 20px;
+    left: 432px;
+    top: 488px;
+    width: 10px;
+}
