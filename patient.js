@@ -1,9 +1,17 @@
 // JavaScript Document
-function clickMe(index,painLevel){
+function clickMe(index){
+	menuitems = document.getElementsByClassName("ids");
+	for(var i = 0;i < menuitems.length; i++){
+		menuitems[i].onclick="clinkPainLevel(" + index + "," + menuitems[i].id + ")"
+	}
+	document.getElementById("menu").style=""
+	document.getElementById(index).innerHTML=document.getElementById("menu")[0].outerHTML;
+}
+function clinkPainLevel(index,painLevel){
 	var s = JSON.parse(localStorage.getItem("storage"));
 	s[index]=painLevel;
 	localStorage.setItem("storage",s);
-	document.getElementById(index).innerHTML="";
+	
 }
 function onLoad(){
 	var painAreaList = document.getElementsByClassName("painArea");
