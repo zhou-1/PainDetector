@@ -10,41 +10,44 @@ function clickMe(index){
 function cancelMe(index){
 	
 }
+function getColor(painLevel){
+	if(painLevel == 1){
+		return "#1E8601";
+	}
+	if(painLevel == 2){
+		return "#6FAD01";
+		}
+	if(painLevel == 3){
+		return "#ABCE04";
+		}
+	if(painLevel == 4){
+		return "#DEEC04";
+		}
+	if(painLevel == 5){
+		return "#FAFE03";
+		}
+	if(painLevel == 6){
+		return "#FFE00f";
+		}
+	if(painLevel == 7){
+		return "#FFB515";
+		}
+	if(painLevel == 8){
+		return "#FF8914";
+		}
+	if(painLevel == 9){
+		return "#FF6A11";
+		}
+	if(painLevel == 10){
+		return "#FF3807";
+		}
+}
 function clinkPainLevel(index,painLevel){
 	var s = JSON.parse(localStorage.getItem("storage"));
 	s[index]=painLevel;
 	localStorage.setItem("storage",JSON.stringify(s));
 	document.getElementById(index).firstChild.remove();
-	if(painLevel == 1){
-		document.getElementById(index).style="background:#1E8601";
-		}
-	if(painLevel == 2){
-		document.getElementById(index).style="background:#6FAD01";
-		}
-	if(painLevel == 3){
-		document.getElementById(index).style="background:#ABCE04";
-		}
-	if(painLevel == 4){
-		document.getElementById(index).style="background:#DEEC04";
-		}
-	if(painLevel == 5){
-		document.getElementById(index).style="background:#FAFE03";
-		}
-	if(painLevel == 6){
-		document.getElementById(index).style="background:#FFE00f";
-		}
-	if(painLevel == 7){
-		document.getElementById(index).style="background:#FFB515";
-		}
-	if(painLevel == 8){
-		document.getElementById(index).style="background:#FF8914";
-		}
-	if(painLevel == 9){
-		document.getElementById(index).style="background:#FF6A11";
-		}
-	if(painLevel == 10){
-		document.getElementById(index).style="background:#FF3807";
-		}
+	document.getElementById(index).style="background:" + getColor(painLevel)
 	document.getElementById(index).setAttribute("onclick","cancelMe(\"" + index + "\")")
 	shouldReShow = document.getElementsByClassName("painArea");
 	
@@ -73,4 +76,13 @@ function changeImg(img){
 	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src=img;
 	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].width="608";
 	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].height="580";
+}
+function clickSave(){
+	localStorage.setItem(document.getElementById("SaveName").value,localStorage.getItem("storage"));
+}
+function clickLoad(){
+	var s = JSON.parse(localStorage.getItem(document.getElementById("SaveName").value));
+	for(var i in s){
+		document.getElementById(i).style="background:" + getColor(s[i])
+	}
 }

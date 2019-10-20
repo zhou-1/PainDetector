@@ -59,10 +59,21 @@
     <button type="button" class="btn btn-primary_m" onClick="changeImg('body1.png')"><img src = "male_icon.png"/></button>
     <button type="button" class="btn btn-primary_t" onClick="changeImg('body2.png')"><img src = "teenager.png"/></button>
     <button type="button" class="btn btn-primary_b" onClick="changeImg('baby_body.png')"><img src = "baby_icon.png"/></button>
-    <button type="button" class="btn btn-primary3" onClick="changeImg("")"><img src = "diarrhea.png" class="addition"/></button>       
-    <button type="button" class="btn btn-primary4" onClick="changeImg()"><img src = "vomit.png" class="addition"/></button>
-    <button type="button" class="btn btn-primary5" onClick="changeImg()"><img src = "dizziness.png" class="addition" /></button>
-    <button type="button" class="btn btn-primary6" onClick="changeImg()"><img src = "headache.png" class="addition"/></button>
+    <button type="button" class="btn btn-primary3" onClick="changeImg(‘body1.png’)"><img src = "diarrhea.png" class="addition"/></button>       
+    <button type="button" class="btn btn-primary4" onClick="changeImg(‘body1.png’)"><img src = "vomit.png" class="addition"/></button>
+    <button type="button" class="btn btn-primary5" onClick="changeImg(‘body1.png’)"><img src = "dizziness.png" class="addition" /></button>
+    <button type="button" class="btn btn-primary6" onClick="changeImg(‘body1.png’)"><img src = "headache.png" class="addition"/></button>
+	<form class="btn-primary6" style="top: 600px">
+	  <div class="input-group-prepend">
+		<span class="input-group-text" id="inputGroup-sizing-sm">Profile Name</span>
+	  </div>
+	  <input id="SaveName" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>      
+	<div class="valid-feedback">
+        Looks good!
+      </div>
+	  <button type="submit" class="btn btn-primary" onClick="clickSave()">Save</button>
+	  <button type="button" class="btn btn-primary" onClick="clickLoad()">Load</button>
+	</form>
     
 <div hidden="hidden" id="mainmenu"><div class="scrollmenu" id = "menu">
   <div id="1" class = "ids">1</div>
@@ -109,6 +120,25 @@
 	  text-decoration: none;
 	}
 </style>
-
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 </body>
 </html>
