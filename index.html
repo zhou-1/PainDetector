@@ -48,10 +48,15 @@
         
         <div class="painArea left_heel" id="left_heel" onclick="clickMe('left_heel')"></div>
         <div class="painArea right_heel" id="right_heel" onclick="clickMe('right_heel')"></div>
+
+        <p>English: Please choose the area you feel pain for, click the place to choose the intensity.</p>
+        <p>中文：请选择你感觉疼痛的地方，并点击选择你的疼痛程度</p>
+        <p>Espanol: Elige dónde sientes dolor, Y haga clic para elegir su nivel de dolor </p>
+
+        <IMG id = "introGif" SRC="intro.gif">
     
 </div>
 
-</head>
 <div hidden="hidden" id="mainmenu"><div class="scrollmenu" id = "menu">
   <div id="1" class = "ids">1</div>
   <div id="2" class = "ids">2</div>
@@ -72,30 +77,28 @@
 	  white-space: nowrap;
 	  width:300px;
 	}
-
 	#menu{
 	  height:20px;
 	  background-image: linear-gradient(to right, rgba(0,255,0,0), yellow, rgba(255,0,0,1)); /* Standard syntax (must be last), green, yellow, red */
 	}
-
 	.ids { 
 	  display:inline-block;
 	  width:10%; 
 	  height:20px; 
 	} 
-
 	.ids:hover{
 	  background-color: white;
 	  color:black;
 	}
-
 	div.scrollmenu {
 	  display: flex;
 	  justify-content:flex-start;
 	  color: white;
-
 	  text-decoration: none;
 	}
 </style>
 </body>
 </html>
+
+
+

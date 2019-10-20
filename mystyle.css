@@ -1,4 +1,4 @@
-﻿.picture {
+.picture {
     height: 550px;
     width: 100%;
     position: absolute;
@@ -351,4 +351,12 @@
     left: 432px;
     top: 488px;
     width: 10px;
+}
+
+#introGif {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+
 }
