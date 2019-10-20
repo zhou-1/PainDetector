@@ -32,9 +32,11 @@ function onLoad(){
 	}
 	localStorage.setItem("storage", JSON.stringify(dict))
 	
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+	$('#myModal').on('shown.bs.modal', function () {
+	  $('#myInput').trigger('focus')
+	})
+
+	localStorage.setItem("storage", JSON.stringify(dict));
 	return 1;
 }
 function loadStoraged(){
