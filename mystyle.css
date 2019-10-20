@@ -6,7 +6,7 @@
 }
 
 .painArea:hover {
-    background-color: aliceblue;
+    background-color: orangered;
 }
 
 .btn_head {
@@ -19,6 +19,7 @@
     height: 50px;
     left: 150px;
     top: 50px;
+    border-radius: 60%;
 }
 
 .btn_chest_r {
