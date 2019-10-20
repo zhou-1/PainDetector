@@ -20,6 +20,7 @@ function clinkPainLevel(index,painLevel){
 	s[index]=painLevel;
 	localStorage.setItem("storage",JSON.stringify(s));
 	document.getElementById(index).firstChild.remove();
+	document.getElementById(index).style="background:red";
 	document.getElementById(index).setAttribute("onclick","cancelMe(\"" + index + "\")")
 	
 }
@@ -35,6 +36,8 @@ function onLoad(){
 function loadStoraged(){
 	var s = JSON.parse(localStorage.getItem("storage"));
 	for(var element in s){
-		document.getElementById(element)[0].style="background:"+"red;"//balabala
+		if(s[element] !=0){
+			document.getElementById(element).style="background:black;"//balabala
+		}
 	}
 }
