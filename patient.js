@@ -31,9 +31,6 @@ function onLoad(){
 		dict[painAreaList[i].id] = 0;//Intinital Pain Score
 	}
 	localStorage.setItem("storage", JSON.stringify(dict));
-	$(function () {
-  		$('[data-toggle="popover"]').popover()
-	})
 	return 1;
 }
 function loadStoraged(){
