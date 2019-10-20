@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
-<head>
+<head>	
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="popper.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/bootstrap.js"></script>
 	<script src="patient.js"></script>
 <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -12,45 +16,47 @@
 <div class="picture">
         <img src="body1.png"  />
     
-        <div data-toggle="modal" data-target="#exampleModal" class="painArea btn_head" id="btn_head" onclick="clickMe('btn_head')"></div>
-        <div class="painArea btn_chest_r" id="btn_chest_r" onclick="clickMe('btn_chest_r')"></div>
-        <div class="painArea btn_chest_m" id="btn_chest_m" onclick="clickMe('btn_chest_m')"></div>
-        <div class="painArea btn_chest_l" id="btn_chest_l" onclick="clickMe('btn_chest_l')"></div>
-        <div class="painArea btn_abd_RVQ" id="btn_abd_RVQ" onclick="clickMe('btn_abd_RVQ')"></div>
-        <div class="painArea btn_abd_LVQ" id="btn_abd_LVQ" onclick="clickMe('btn_abd_LVQ')"></div>
-        <div class="painArea btn_abd_RLQ" id="btn_abd_RLQ" onclick="clickMe('btn_abd_RLQ')"></div>
-        <div class="painArea btn_abd_LLQ" id="btn_abd_LLQ" onclick="clickMe('btn_abd_LLQ')"></div>
-        <div class="painArea btn_hip" id="btn_hip" onclick="clickMe('btn_hip')"></div>
-        <div class="painArea btn_thigh_l" id="btn_thigh_l" onclick="clickMe('btn_thigh_l')"></div>
-        <div class="painArea btn_thigh_r" id="btn_thigh_r" onclick="clickMe('btn_thigh_r')"></div>
-        <div class="painArea btn_shin_l" id="btn_shin_l" onclick="clickMe('btn_shin_l')"></div>
-        <div class="painArea btn_shin_r" id="btn_shin_r" onclick="clickMe('btn_shin_r')"></div>
-        <div class="painArea btn_sole_l" id="btn_sole_l" onclick="clickMe('btn_sole_l')"></div>
-        <div class="painArea btn_sole_r" id="btn_sole_r" onclick="clickMe('btn_sole_r')"></div>
+        <button data-toggle="modal" data-target="#exampleModal" class="btn painArea btn_head" id="btn_head" onclick="clickMe('btn_head')"></button>
+        <button class="painArea btn_chest_r" id="btn_chest_r" onclick="clickMe('btn_chest_r')"></button>
+        <button class="painArea btn_chest_m" id="btn_chest_m" onclick="clickMe('btn_chest_m')"></button>
+        <button class="painArea btn_chest_l" id="btn_chest_l" onclick="clickMe('btn_chest_l')"></button>
+        <button class="painArea btn_abd_RVQ" id="btn_abd_RVQ" onclick="clickMe('btn_abd_RVQ')"></button>
+        <button class="painArea btn_abd_LVQ" id="btn_abd_LVQ" onclick="clickMe('btn_abd_LVQ')"></button>
+        <button class="painArea btn_abd_RLQ" id="btn_abd_RLQ" onclick="clickMe('btn_abd_RLQ')"></button>
+        <button class="painArea btn_abd_LLQ" id="btn_abd_LLQ" onclick="clickMe('btn_abd_LLQ')"></button>
+        <button class="painArea btn_hip" id="btn_hip" onclick="clickMe('btn_hip')"></button>
+        <button class="painArea btn_thigh_l" id="btn_thigh_l" onclick="clickMe('btn_thigh_l')"></button>
+        <button class="painArea btn_thigh_r" id="btn_thigh_r" onclick="clickMe('btn_thigh_r')"></button>
+        <button class="painArea btn_shin_l" id="btn_shin_l" onclick="clickMe('btn_shin_l')"></button>
+        <button class="painArea btn_shin_r" id="btn_shin_r" onclick="clickMe('btn_shin_r')"></button>
+        <button class="painArea btn_sole_l" id="btn_sole_l" onclick="clickMe('btn_sole_l')"></button>
+        <button class="painArea btn_sole_r" id="btn_sole_r" onclick="clickMe('btn_sole_r')"></button>
         <div class ="rotate_l">
-            <div class="painArea btn_arm_l" id="btn_arm_l" onclick="clickMe('btn_arm_l')"></div>
-            <div class="painArea btn_back_arm_l" id="btn_back_arm_l" onclick="clickMe('btn_back_arm_l')"></div>
+            <button class="painArea btn_arm_l" id="btn_arm_l" onclick="clickMe('btn_arm_l')"></button>
+            <button class="painArea btn_back_arm_l" id="btn_back_arm_l" onclick="clickMe('btn_back_arm_l')"></button>
         </div>
 
         <div class ="rotate_r">
-            <div class="painArea btn_arm_r" id="btn_arm_r" onclick="clickMe('btn_arm_r')"></div>
-            <div class="painArea btn_back_arm_r" id="btn_back_arm_r" onclick="clickMe('btn_back_arm_r')"></div>
+            <button class="painArea btn_arm_r" id="btn_arm_r" onclick="clickMe('btn_arm_r')"></button>
+            <button class="painArea btn_back_arm_r" id="btn_back_arm_r" onclick="clickMe('btn_back_arm_r')"></button>
         </div>
 
-        <div class="painArea back_r" id="back_r" onclick="clickMe('back_r')"></div>
-        <div class="painArea back_l" id="back_l" onclick="clickMe('back_l')"></div>
-        <div class="painArea back_m" id="back_m" onclick="clickMe('back_m')"></div>
+        <button class="painArea back_r" id="back_r" onclick="clickMe('back_r')"></button>
+        <button class="painArea back_l" id="back_l" onclick="clickMe('back_l')"></button>
+        <button class="painArea back_m" id="back_m" onclick="clickMe('back_m')"></button>
         
-        <div class="painArea back_leg_left" id="back_leg_left" onclick="clickMe('back_leg_left')"></div>
-        <div class="painArea back_leg_right" id="back_leg_right" onclick="clickMe('back_leg_right')"></div>
-        <div class="painArea back_leg_right_d" id="back_leg_right_d" onclick="clickMe('back_leg_right_d')"></div>
-        <div class="painArea back_leg_left_d" id="back_leg_left_d" onclick="clickMe('back_leg_left_d')"></div>
+        <button class="painArea back_leg_left" id="back_leg_left" onclick="clickMe('back_leg_left')"></button>
+        <button class="painArea back_leg_right" id="back_leg_right" onclick="clickMe('back_leg_right')"></button>
+        <button class="painArea back_leg_right_d" id="back_leg_right_d" onclick="clickMe('back_leg_right_d')"></button>
+        <button class="painArea back_leg_left_d" id="back_leg_left_d" onclick="clickMe('back_leg_left_d')"></button>
         
-        <div class="painArea left_heel" id="left_heel" onclick="clickMe('left_heel')"></div>
-        <div class="painArea right_heel" id="right_heel" onclick="clickMe('right_heel')"></div>
+        <button class="painArea left_heel" id="left_heel" onclick="clickMe('left_heel')"></button>
+        <button class="painArea right_heel" id="right_heel" onclick="clickMe('right_heel')"></button>
+	<img id = "introGif" src="intro.gif"/>
     
 </div>
-
+<button type="button" class="btn btn-primary" onClick="changeToFem()">Female</button>
+<button type="button" class="btn btn-primary" onClick="changeTomale()">Male</button>
 <div hidden="hidden" id="mainmenu"><div class="scrollmenu" id = "menu">
   <div id="1" class = "ids">1</div>
   <div id="2" class = "ids">2</div>

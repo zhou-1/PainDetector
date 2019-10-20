@@ -4,8 +4,17 @@
     position: absolute;
     left: 350px;
 }
-
+.painArea{
+	animation-name: show;
+	animation-duration: 4s;
+}
+@keyframes show {
+  0%   {background-color: rgba(0,0,0,0.00);}
+  50%  {background-color: orangered;}
+  100%  {background-color: rgba(0,0,0,0.00);}
+}
 .painArea:hover {
+	transition: background-color 1s;
     background-color: orangered;
 }
 
@@ -20,6 +29,7 @@
     left: 150px;
     top: 50px;
     border-radius: 60%;
+	animation-delay : 0s;
 }
 
 .btn_chest_r {
@@ -32,6 +42,7 @@
     left: 127px;
     top: 125px;
     width: 30px;
+	animation-delay : 0.5s;
 }
 
 .btn_chest_m {
@@ -44,6 +55,7 @@
     left: 157px; 
     top: 125px; 
     width: 30px;
+	animation-delay : 0.7s;
 }
 
 .btn_chest_l {
@@ -56,6 +68,7 @@
     left: 187px;
     top: 125px;
     width: 30px;
+	animation-delay : 0.8s;
 }
 
 .btn_abd_RVQ {
@@ -68,6 +81,7 @@
     left: 133px;
     top: 195px;
     width: 35px;
+	animation-delay : 1.5s;
 }
 
 .btn_abd_LVQ {
@@ -80,6 +94,7 @@
     left: 168px;
     top: 195px;
     width: 35px;
+	animation-delay : 1.7s;
 }
 
 .btn_abd_RLQ {
@@ -92,6 +107,7 @@
     left: 133px;
     top: 232px;
     width: 35px;
+	animation-delay : 1.9s;
 }
 
 .btn_abd_LLQ {
@@ -104,6 +120,7 @@
     left: 168px;
     top: 232px;
     width: 35px;
+	animation-delay : 2.1s;
 }
 
 .btn_hip {
@@ -116,6 +133,7 @@
     left: 130px;
     top: 269px;
     width: 80px;
+	animation-delay : 2.6s;
 }
 
 .btn_thigh_l {
@@ -129,6 +147,7 @@
     top: 303px;
     width: 38px;
     border-radius: 60%;
+	animation-delay : 3.1s;
 }
 
 .btn_thigh_r {
@@ -142,6 +161,7 @@
     top: 303px;
     width: 38px;
     border-radius: 60%;
+	animation-delay : 3.3s;
 }
 
 .btn_shin_l {
@@ -155,6 +175,7 @@
     top: 378px;
     width: 28px;
     border-radius: 60%;
+	animation-delay : 3.5s;
 }
 
 .btn_shin_r {
@@ -168,19 +189,7 @@
     top: 378px;
     width: 28px;
     border-radius: 60%;
-}
-
-.btn_sole_l {
-    border-style: none;
-    border-color: inherit;
-    border-width: medium;
-    background-color: transparent;
-    position: absolute;
-    height: 40px;
-    left: 174px;
-    top: 478px;
-    width: 28px;
-    border-radius: 40%;
+	animation-delay : 3.7s;
 }
 
 .btn_sole_r {
@@ -194,7 +203,22 @@
     top: 478px;
     width: 28px;
     border-radius: 40%;
+	animation-delay : 4.2s;
 }
+.btn_sole_l {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: transparent;
+    position: absolute;
+    height: 40px;
+    left: 174px;
+    top: 478px;
+    width: 28px;
+    border-radius: 40%;
+	animation-delay : 4.4s;
+}
+
 
 .rotate_l {
     transform: rotate(11deg);
@@ -215,6 +239,7 @@
     top: -320px;
     width: 28px;
     border-radius: 60%;
+	animation-delay : 2.1s;
 }
 
 .btn_back_arm_l {
@@ -228,6 +253,7 @@
     top: -370px;
     width: 28px;
     border-radius: 60%;
+	animation-delay : 2.1s;
 }
 
 .btn_arm_r {
@@ -241,6 +267,7 @@
     top: -530px;
     width: 28px;
     border-radius: 60%;
+	animation-delay : 1.4s;
 }
 
 .btn_back_arm_r {
@@ -254,6 +281,7 @@
     top: -480px;
     width: 28px;
     border-radius: 60%;
+	animation-delay : 1.4s;
 }
 
 .back_r {
@@ -266,6 +294,7 @@
     left: 410px;
     top: 125px;
     width: 30px;
+	animation-delay : 0.5s;
 }
 
 .back_m {
@@ -278,6 +307,7 @@
     left: 435px;
     top: 125px;
     width: 30px;
+	animation-delay : 0.7s;
 }
 
 .back_l {
@@ -290,6 +320,7 @@
     left: 455px;
     top: 125px;
     width: 30px;
+	animation-delay : 0.7s;
 }
 
 .back_leg_left {
@@ -303,6 +334,7 @@
     top: 300px;
     width: 30px;
     border-radius: 60%;
+	animation-delay : 3.1s;
 }
 
 .back_leg_right {
@@ -316,6 +348,7 @@
     top: 300px;
     width: 30px;
     border-radius: 60%;
+	animation-delay : 3.2s;
 }
 
 .back_leg_right_d {
@@ -329,6 +362,7 @@
     top: 390px;
     width: 30px;
     border-radius: 60%;
+	animation-delay : 3.3s;
 }
 
 .back_leg_left_d {
@@ -342,6 +376,7 @@
     top: 390px;
     width: 30px;
     border-radius: 60%;
+	animation-delay : 3.4s;
 }
 
 .left_heel {
@@ -354,6 +389,7 @@
     left: 450px;
     top: 488px;
     width: 10px;
+	animation-delay : 3.9s;
 }
 
 .right_heel {
@@ -366,12 +402,22 @@
     left: 432px;
     top: 488px;
     width: 10px;
+	animation-delay : 4.1s;
 }
 
 #introGif {
     position: absolute;
     left: 0px;
     top: 0px;
-
-
+	height: 0px;
+	animation-name: hide;
+	animation-duration: 14s;
+	animation-delay: 7s;
+	
+}
+@keyframes hide {
+  0%   {height: 0px;}
+  1%  {height:600px;}
+  99%  {height: 600px;}
+  100% {height: 0px;}
 }

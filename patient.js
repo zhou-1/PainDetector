@@ -1,16 +1,11 @@
 // JavaScript Document
 function clickMe(index){
-	var goDel = document.getElementsByName("delete")[0];
-	if(goDel!=null){
-		goDel.outerHTML="";
-	}
 	menuitems = document.getElementsByClassName("ids");
 	for(var i = 0;i < menuitems.length; i++){
 		menuitems[i].setAttribute("onclick","clinkPainLevel(\"" + index + "\"," + menuitems[i].id + ")");
 	}
 	document.getElementById("menu").style="position:absolte;bottom:10px";
 	document.getElementById(index).innerHTML=document.getElementById("mainmenu").innerHTML;
-
 }
 function cancelMe(index){
 	
@@ -22,6 +17,7 @@ function clinkPainLevel(index,painLevel){
 	document.getElementById(index).firstChild.remove();
 	document.getElementById(index).style="background:red";
 	document.getElementById(index).setAttribute("onclick","cancelMe(\"" + index + "\")")
+	shouldReShow = document.getElementsByClassName("painArea");
 	
 }
 function onLoad(){
@@ -31,7 +27,9 @@ function onLoad(){
 		dict[painAreaList[i].id] = 0;//Intinital Pain Score
 	}
 	localStorage.setItem("storage", JSON.stringify(dict));
-
+	$('#myModal').on('shown.bs.modal', function () {
+	  $('#myInput').trigger('focus')
+	})
 	return 1;
 }
 function loadStoraged(){
@@ -41,4 +39,11 @@ function loadStoraged(){
 			document.getElementById(element).style="background:black;"//balabala
 		}
 	}
+}
+function changeToFem(){
+	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src="female_body.png";
+	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].width="608";
+	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].height="580";
+}function changeTomale(){
+	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src="body1.png";
 }
