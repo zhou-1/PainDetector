@@ -69,12 +69,8 @@ function loadStoraged(){
 		}
 	}
 }
-function changeToFem(){
-	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src="female_body.png";
+function changeImg(img){
+	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src=img;
 	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].width="608";
 	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].height="580";
-}function changeTomale(){
-	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src="body1.png";
-}function changeTobaby(){
-	document.getElementsByClassName("picture")[0].getElementsByTagName("img")[0].src="baby_body.png";
 }
