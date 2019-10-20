@@ -5,14 +5,39 @@
 <meta charset="utf-8">
 <title>PainDetector</title>
 <style>
-        body{
-            background-image:url(body.png);
+        .picture{
+            height: 550px;
+            width:100%;
+            position: absolute;
+            left:350px;
         }
-</style>
+        .btn_head{
+            border-style: none; 
+            border-color: inherit; 
+            border-width: medium; 
+            background-color: transparent; 
+            position: absolute; 
+            width: 35px;
+            height: 50px; 
+            left: 150px; 
+            top: 50px;
+        }
+        .btn_head:hover{
+            background-color:darkcyan;
+        }
+    </style>
 </head>
 
 <body>
-	<div>
-	</div>
+<div class="picture">
+        <img src="body.png"  />
+    <p>
+        <button class="painArea btn_head" id="btn_head"></button>
+        <button id="btn_chest_r" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left:127px; top:125px; width: 30px;"></button>
+        <button id="btn_chest_m" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left: 157px; top: 125px; width: 30px;"></button>
+        <button id="btn_chest_l" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left: 187px; top: 125px; width: 30px;"></button>
+        <button id="btn_abd_RVQ" style="border-style: none; border-color: inherit; border-width: medium; background-color: transparent; position: absolute; height: 70px; left: 157px; top: 125px; width: 30px;">M</button>
+    </p>
+</div>
 </body>
 </html>
