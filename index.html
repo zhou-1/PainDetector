@@ -48,10 +48,12 @@
         
         <div class="painArea left_heel" id="left_heel" onclick="clickMe('left_heel')"></div>
         <div class="painArea right_heel" id="right_heel" onclick="clickMe('right_heel')"></div>
+
+
+        <!--<IMG id = "introGif" SRC="intro.gif">-->
     
 </div>
 
-</head>
 <div hidden="hidden" id="mainmenu"><div class="scrollmenu" id = "menu">
   <div id="1" class = "ids">1</div>
   <div id="2" class = "ids">2</div>
@@ -65,37 +67,90 @@
   <div id="10" class = "ids">10</div>
   
 </div></div>
+
+<p class="faces">&#128534;</p>
+<p class = "faces" id="smile">&#128522;</p>
+<div class="exampleMenu" id = "exampleIDMenu">
+        <div id="21" class = "ids2">1</div>
+        <div id="22" class = "ids2">2</div>
+        <div id="23" class = "ids2">3</div>
+        <div id="24" class = "ids2">4</div>
+        <div id="25" class = "ids2">5</div>
+        <div id="26" class = "ids2">6</div>
+        <div id="27" class = "ids2">7</div>
+        <div id="28" class = "ids2">8</div>
+        <div id="29" class = "ids2">9</div>
+        <div id="210" class = "ids2">10</div>
+        
+</div>
+
+
 <style>
+    div.exampleMenu {
+        background-color: green;
+	    overflow: auto;
+	    white-space: nowrap;
+	    width:300px;
+    }
+
 	div.scrollmenu {
 	  background-color: green;
 	  overflow: auto;
 	  white-space: nowrap;
 	  width:300px;
 	}
-
 	#menu{
 	  height:20px;
 	  background-image: linear-gradient(to right, rgba(0,255,0,0), yellow, rgba(255,0,0,1)); /* Standard syntax (must be last), green, yellow, red */
-	}
+    }
+    
+    #exampleIDMenu{
+	  height:20px;
+	  background-image: linear-gradient(to right, rgba(0,255,0,0), yellow, rgba(255,0,0,1)); /* Standard syntax (must be last), green, yellow, red */
+    }
 
 	.ids { 
 	  display:inline-block;
 	  width:10%; 
 	  height:20px; 
-	} 
+    } 
+    .ids2 { 
+	  display:inline-block;
+	  width:10%; 
+	  height:20px; 
+    } 
 
+    .faces{
+        display:inline-block;
+	    width:265px; 
+	    height:20px; 
+    }
+    
 	.ids:hover{
 	  background-color: white;
 	  color:black;
-	}
-
+    }
+    .ids2:hover{
+	  background-color: white;
+	  color:black;
+    }
+    
 	div.scrollmenu {
 	  display: flex;
 	  justify-content:flex-start;
 	  color: white;
-
+	  text-decoration: none;
+    }
+    
+	div.exampleMenu {
+	  display: flex;
+	  justify-content:flex-start;
+	  color: white;
 	  text-decoration: none;
 	}
 </style>
 </body>
 </html>
+
+
+
