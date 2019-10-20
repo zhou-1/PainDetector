@@ -1,4 +1,4 @@
-.picture {
+﻿.picture {
     height: 550px;
     width: 100%;
     position: absolute;
@@ -6,7 +6,7 @@
 }
 
 .painArea:hover {
-    background-color: orangered;
+    background-color: aliceblue;
 }
 
 .btn_head {
@@ -19,7 +19,6 @@
     height: 50px;
     left: 150px;
     top: 50px;
-    border-radius: 60%;
 }
 
 .btn_chest_r {
@@ -128,7 +127,6 @@
     left: 130px;
     top: 303px;
     width: 38px;
-    border-radius: 60%;
 }
 
 .btn_thigh_r {
@@ -141,7 +139,6 @@
     left: 168px;
     top: 303px;
     width: 38px;
-    border-radius: 60%;
 }
 
 .btn_shin_l {
@@ -154,7 +151,6 @@
     left: 137px;
     top: 378px;
     width: 28px;
-    border-radius: 60%;
 }
 
 .btn_shin_r {
@@ -167,7 +163,6 @@
     left: 174px;
     top: 378px;
     width: 28px;
-    border-radius: 60%;
 }
 
 .btn_sole_l {
@@ -180,7 +175,6 @@
     left: 174px;
     top: 478px;
     width: 28px;
-    border-radius: 40%;
 }
 
 .btn_sole_r {
@@ -193,7 +187,6 @@
     left: 140px;
     top: 478px;
     width: 28px;
-    border-radius: 40%;
 }
 
 .rotate_l {
@@ -214,7 +207,6 @@
     left: 30px;
     top: -320px;
     width: 28px;
-    border-radius: 60%;
 }
 
 .btn_back_arm_l {
@@ -227,7 +219,6 @@
     left: 305px;
     top: -370px;
     width: 28px;
-    border-radius: 60%;
 }
 
 .btn_arm_r {
@@ -240,7 +231,6 @@
     left: 300px;
     top: -530px;
     width: 28px;
-    border-radius: 60%;
 }
 
 .btn_back_arm_r {
@@ -253,7 +243,6 @@
     left: 570px;
     top: -480px;
     width: 28px;
-    border-radius: 60%;
 }
 
 .back_r {
@@ -302,7 +291,6 @@
     left: 450px;
     top: 300px;
     width: 30px;
-    border-radius: 60%;
 }
 
 .back_leg_right {
@@ -315,7 +303,6 @@
     left: 415px;
     top: 300px;
     width: 30px;
-    border-radius: 60%;
 }
 
 .back_leg_right_d {
@@ -328,7 +315,6 @@
     left: 415px;
     top: 390px;
     width: 30px;
-    border-radius: 60%;
 }
 
 .back_leg_left_d {
@@ -341,7 +327,6 @@
     left: 450px;
     top: 390px;
     width: 30px;
-    border-radius: 60%;
 }
 
 .left_heel {
@@ -366,12 +351,4 @@
     left: 432px;
     top: 488px;
     width: 10px;
-}
-
-#introGif {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-
-
 }
