@@ -30,14 +30,11 @@ function onLoad(){
 	for(var i=0; i < painAreaList.length; i++){
 		dict[painAreaList[i].id] = 0;//Intinital Pain Score
 	}
-	localStorage.setItem("storage", JSON.stringify(dict));
-<<<<<<< HEAD
+	localStorage.setItem("storage", JSON.stringify(dict))
 	
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
-=======
->>>>>>> parent of 13e5856... add som
 	return 1;
 }
 function loadStoraged(){
