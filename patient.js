@@ -31,10 +31,7 @@ function onLoad(){
 		dict[painAreaList[i].id] = 0;//Intinital Pain Score
 	}
 	localStorage.setItem("storage", JSON.stringify(dict));
-	
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+
 	return 1;
 }
 function loadStoraged(){
