@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.scrollmenu {
+  background-color: green;
+  overflow: auto;
+  white-space: nowrap;
+  width:300px;
+}
+
+#menu{
+  height:20px;
+  background-image: linear-gradient(to right, rgba(0,255,0,0), yellow, rgba(255,0,0,1)); /* Standard syntax (must be last), green, yellow, red */
+}
+
+.ids { 
+  display:inline-block;
+  width:10%; 
+  height:20px; 
+} 
+
+.ids:hover{
+  background-color: white;
+  color:black;
+}
+
+div.scrollmenu {
+  display: flex;
+  justify-content:flex-start;
+  color: white;
+
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="scrollmenu" id = "menu">
+  <div id="1" class = "ids">1</div>
+  <div id="2" class = "ids">2</div>
+  <div id="3" class = "ids">3</div>
+  <div id="4" class = "ids">4</div>
+  <div id="5" class = "ids">5</div>
+  <div id="6" class = "ids">6</div>
+  <div id="7" class = "ids">7</div>
+  <div id="8" class = "ids">8</div>
+  <div id="9" class = "ids">9</div>
+  <div id="10" class = "ids">10</div>
+  
+</div>
+
+</body>
+</html>
