@@ -15,7 +15,36 @@ function clinkPainLevel(index,painLevel){
 	s[index]=painLevel;
 	localStorage.setItem("storage",JSON.stringify(s));
 	document.getElementById(index).firstChild.remove();
-	document.getElementById(index).style="background:red";
+	if(painLevel == 1){
+		document.getElementById(index).style="background:#1E8601";
+		}
+	if(painLevel == 2){
+		document.getElementById(index).style="background:#6FAD01";
+		}
+	if(painLevel == 3){
+		document.getElementById(index).style="background:#ABCE04";
+		}
+	if(painLevel == 4){
+		document.getElementById(index).style="background:#DEEC04";
+		}
+	if(painLevel == 5){
+		document.getElementById(index).style="background:#FAFE03";
+		}
+	if(painLevel == 6){
+		document.getElementById(index).style="background:#FFE00f";
+		}
+	if(painLevel == 7){
+		document.getElementById(index).style="background:#FFB515";
+		}
+	if(painLevel == 8){
+		document.getElementById(index).style="background:#FF8914";
+		}
+	if(painLevel == 9){
+		document.getElementById(index).style="background:#FF6A11";
+		}
+	if(painLevel == 10){
+		document.getElementById(index).style="background:#FF3807";
+		}
 	document.getElementById(index).setAttribute("onclick","cancelMe(\"" + index + "\")")
 	shouldReShow = document.getElementsByClassName("painArea");
 	
